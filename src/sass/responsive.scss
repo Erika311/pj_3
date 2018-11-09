@@ -1,0 +1,262 @@
+
+@import 'style.scss';
+
+
+
+
+// small mobile
+@media screen and (min-width: $small-viewport-minwidth) and (max-width: $small-viewport-maxwidth){
+
+  .row .row {
+       margin-right: -0px;
+      margin-left: 0px;
+  }
+  .navbar{
+    margin: 0px 0px 0px 0px;
+  }
+.section1, .section2, .section3, .section4, .section6,
+ .section8, .section9, .section11, .section12{
+  padding: 35px 0px 0px 0px;
+}
+  .section1, .section6, .section9, .section12{
+    background: $mobile-background_color;
+    font-family: $body--copy;
+  }
+  .section1{
+    padding:60px 0 0 0;
+     h1{
+        font-weight: 900;
+        line-height: 1.3em;
+        text-align: center;
+        margin-left: 0px;
+      }
+      h2{
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+  }
+
+  .section1 ul{
+    margin: 40px 10px 35px 0px;
+     li{
+      margin: 10px 0px 10px 10px;
+      p{
+        font-size: 1em;
+        padding: -20px 0px -20px 0px;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .quotes{
+    @include quote;
+    @include quote--author;
+    .quoteWrapper{
+      margin: 10px auto;
+    }
+  }
+  .section1{
+    margin: 0 0 0 0;
+  }
+  .section1, .section6{
+    padding:35px 20px 35px 20px;
+    h1{
+      text-align: left;
+    }
+  }
+  .section3, .section5, .section10, .section13{
+    @include button-small-viewport;
+    max-width: 100%;
+  }
+  //button styles
+ .section5, .section10, .section13{
+    @include button-small-viewport;
+    margin: 30px 0 0 0;
+  }
+  .section3{
+    @include button-small-viewport;
+    margin: 0px 0 0 0;
+  }
+  .section2, .section4, .section11{
+    font-family:$body--copy;
+  }
+  .section1{
+     h1{
+        font-size: $small-browser-h1;
+        font-weight: 700;
+        line-height: 1.3em;
+      }
+      h2{
+        font-weight: 600;
+        font-size: 1.2em;
+        font-style: italic;
+      }
+  }
+  p{
+    font-size: 1.1em;
+    margin: 10px;
+    font-weight: 400;
+  }
+  .james{
+    display: none;
+  }
+
+  .section8{
+    padding-bottom: 35px;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .large-bookcover{
+    max-width: 250px;
+  }
+  .section12{
+    text-align: left;
+    border-bottom: 5px solid $yellow;
+    border-top: 5px solid $yellow;
+  }
+  .hidebr{
+    display: none;
+  }
+  .quoteWrapper {
+    max-width: 420px;
+    margin: 10px auto;
+  }
+}
+
+
+//lage mobile
+@media screen and (min-width: $large-mobile-viewport-minwidth) and (max-width: $large-mobile-viewport-maxwidth){
+
+  .row .row {
+       margin-right: -0px;
+      margin-left: 0px;
+  }
+
+.section1, .section2, .section3, .section4, .section6,
+ .section8, .section9, .section11, .section12{
+  padding: 35px 0px;
+}
+  .section1, .section6, .section9, .section12{
+    background-color: $mobile-background_color;
+    font-family: $body--copy;
+  }
+  .section1{
+    margin: 40px 0 0 0;
+      h1, h2{
+      text-align: left;
+    }
+  }
+
+    .section1 ul{
+      margin: 40px 10px 35px 0px;
+       li{
+        margin: 10px 0px 10px 10px;
+        p{
+          font-size: 1em;
+          padding: -20px 0px -20px 0px;
+          font-size: 1.2em;
+          font-weight: 500;
+        }
+      }
+    }
+
+  .james{
+    display: none;
+  }
+  .section3{
+    margin: -50px auto;
+  }
+  .section2, .section4, .section11{
+    font-family:$body--copy;
+  }
+  .section1{
+     h1{
+        font-size: $small-browser-h1;
+        font-weight: 700;
+        line-height: 1.3em;
+      }
+      h2{
+        font-weight: 600;
+        font-size: 1.2em;
+        font-style: italic;
+      }
+  }
+
+  p{
+    font-size: 1.1em;
+    margin: 10px;
+  }
+  .section8{
+    font-family: $body--copy;
+    line-height: 1.5em;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h1, h2{
+    margin:20px auto 30px auto;
+    text-align: center;
+    font-size: 1.7em;
+  }
+  .section12{
+    text-align: center;
+    border-bottom: 7px solid $yellow;
+    border-top: 7px solid $yellow;
+  }
+}
+
+
+
+
+//small - medium tablets
+
+@media screen and (min-width: $medium-tablet-viewport-minwidth) and (max-width: $medium-tablet-viewport-maxwidth){
+
+    .row .row {
+        margin-right: -0px;
+        margin-left: 0px;
+    }
+
+      .section1 ul{
+        margin: 40px 10px 35px 0px;
+         li{
+          margin: 10px 0px 10px 10px;
+          p{
+            font-size: 1em;
+            padding: -20px 0px -20px 0px;
+            font-size: 1.2em;
+            font-weight: 500;
+          }
+        }
+      }
+
+    .james{
+      display: none;
+    }
+    //adding in background images for this viewpot
+    .section1{
+      background: url('https://d13p2xj50zkyqm.cloudfront.net/promos_1/LF/ALR/ALR_ReinventYourself_Compliant/report-covers/ALR_ReinventYourself_Jump450_Compliant_HeadlineBackground.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      h1 {
+        font-size: $medium-browser-h1;
+        text-align: center;
+      }
+    }
+
+    .section6{
+      background: url('https://d13p2xj50zkyqm.cloudfront.net/promos_2/LF/ALR/ALR_ReinventYourself_Compliant/ALR_ReinventYourself_Jump450_Compliant_ExpertsAgreeBackground.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .section9, .section12{
+      background: url('https://d13p2xj50zkyqm.cloudfront.net/promos_2/LF/ALR/ALR_ReinventYourself_Compliant/ALR_ReinventYourself_Compliant_FinalSectionBackground.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
+
+// colors main collors
+
+$pink: #eb2a9d;
+$yellow: #fff130;
+$blue: #17b2d6;
+$body: #000;
+$white: #ffffff;
+$black: 			#000000;
+$buttonGray: 		#afafaf;
+
+//navbar colors
+$navbar-background: #eb2a9d;
+$navbar-border: #17b2d6;
+$navbar-font: #fff;
+
+
+$mobile-background_color: #e1e2e6;
+
+//fonts
+
+$body--copy: 'Montserrat', sans-serif;
+
+
+// Large screens headers
+
+$lage-browser-h1: 5em;
+$medium-browser-h1: 3em;
+$small-browser-h1: 1.3em;
+
+
+//media quieries
+
+$small-viewport-minwidth: 0px;
+$small-viewport-maxwidth: 639px;
+
+$large-mobile-viewport-minwidth: 640px;
+$large-mobile-viewport-maxwidth: 780px;
+
+$medium-tablet-viewport-minwidth: 781px;
+$medium-tablet-viewport-maxwidth: 1103px;

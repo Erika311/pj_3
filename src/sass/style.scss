@@ -1,0 +1,243 @@
+@import 'var.scss';
+@import 'reset.scss';
+@import 'foundation.scss';
+@import 'nav.scss';
+@import 'mixin.scss';
+
+
+//global and desktop styles
+
+h1, h2, h3, h4, h5, h6, span, p, li{
+  font-family: $body--copy;
+}
+
+
+p{
+  font-weight: 500;
+  margin: 20px auto;
+  font-size: 1.1em;
+}
+em{
+  font-style: italic;
+}
+
+.image_center, .large-bookcover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar{
+  font-size: 1.1em;
+  margin: 0px 0px 60px 0px;
+  padding-top: 15px;
+  font-weight: 700;
+  text-align: center;
+  .navbar--logo{
+    margin: -10px 0px;
+    width: 200px;
+  }
+}
+
+
+//section
+
+  .section1, .section6, .section9, .section12{
+    font-family: $body--copy;
+  }
+  .section1{
+    margin: 40px 0 0 0;
+      h1, h2{
+      text-align: left;
+    }
+  }
+
+
+  .section1, .section2, .section6,
+   .section8, .section9, .section11, .section12{
+    padding:35px 0px 35px 0px;
+  }
+
+.section4{
+  padding-bottom: 35px;
+}
+.section1{
+  padding:60px 0 0 0;
+   h1{
+      font-weight: 900;
+      line-height: 1.3em;
+      text-align: center;
+      margin-left: 60px;
+    }
+    h2{
+      font-size: 2em;
+      font-weight: 800;
+      font-style: italic;
+      text-align: center;
+      margin-left: 150px;
+      margin-bottom: -30px;
+    }
+}
+
+.section1 ul{
+  margin: 40px 10px 35px 110px;
+   li{
+    list-style-image: url('https://d13p2xj50zkyqm.cloudfront.net/promos/LF/SPY/SEAL_torch_0517/SPY_SealTorch_BillClubFunnel_Checkky-Check.png');
+    margin: 10px 0px 10px 300px;
+    p{
+      font-size: 1em;
+      padding: -20px 0px -20px 0px;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+  }
+}
+
+.section1{
+  background: url('https://d13p2xj50zkyqm.cloudfront.net/promos_1/LF/ALR/ALR_ReinventYourself_Compliant/report-covers/ALR_ReinventYourself_Jump450_Compliant_HeadlineBackground.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-size: $medium-browser-h1;
+    text-align: center;
+  }
+  .james{
+    float: left;
+    margin-top: -200px;
+    margin-left: -400px;
+    width: 75%;
+    min-width: 30%;
+    vertical-align: baseline;
+  }
+}
+
+.section6{
+  background: url('https://d13p2xj50zkyqm.cloudfront.net/promos_2/LF/ALR/ALR_ReinventYourself_Compliant/ALR_ReinventYourself_Jump450_Compliant_ExpertsAgreeBackground.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section9, .section12{
+  background: url('https://d13p2xj50zkyqm.cloudfront.net/promos_2/LF/ALR/ALR_ReinventYourself_Compliant/ALR_ReinventYourself_Compliant_FinalSectionBackground.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.quotes{
+  @include quote;
+  @include quote--author;
+  margin: 10px;
+  font-size: 1em;
+  font-family:$body--copy;
+}
+.section1-1, .section7{
+  label{
+    font-family: $body--copy;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+  }
+  background-color: $blue;
+  border-top: 7px solid $yellow;
+  border-bottom: 7px solid $yellow;
+  @include submission;
+  .submit{
+    margin: 25px 0 0 0;
+  }
+}
+
+.section9 ul li{
+  list-style-image: url('https://d13p2xj50zkyqm.cloudfront.net/promos/LF/SPY/SEAL_torch_0517/SPY_SealTorch_BillClubFunnel_Checkky-Check.png');
+  margin: 10px 0px 10px 40px;
+  p{
+    font-size: 1em;
+    padding: -10px 0px 0px 0px;
+  }
+  span{
+    color: $blue;
+    font-weight: 800;
+    font-size: 1.3em;
+  }
+}
+
+.section4{
+  ul{
+      li{
+      border: 2px solid $blue;
+      margin: 10px;
+      padding:10px;
+      background:#FAFAFA;
+      box-shadow: 3px 3px 3px #f6f6f6;
+    }
+    padding: -20px 0 -20px 0;
+}
+}
+
+//button styles
+.section3, .section5, .section10, .section13{
+  @include button-small-viewport;
+  max-width: 500px;
+  margin: 10px auto;
+  .yellow{
+        border-radius: 50px;
+  }
+}
+
+
+
+h4{
+  font-size: 1.2em;
+  font-weight: 900;
+  color: $blue;
+  margin: 10px 0px 0px 0px;
+}
+.header-pink{
+  color: $pink;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.section8{
+  padding-bottom: 35px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 10px 10px;
+  .header-blue{
+    color: $blue;
+  }
+}
+.section9{
+  .header-pink{
+    text-align: center;
+  }
+  li{
+    font-weight: 500;
+  }
+}
+.large-bookcover{
+  max-width: 270px;
+}
+.section12 {
+  text-align: center;
+  border-top: 7px solid $yellow;
+  border-bottom: 7px solid $yellow;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  text-align:center;
+}
+
+.header-blue, .header-pink{
+  font-weight: 800;
+}
+
+.section10{
+    margin: 60px auto 0 auto;
+}
+.quoteWrapper {
+  max-width: 420px;
+  margin: 10px auto;
+}
